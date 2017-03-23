@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="730.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semiPJ.MainController">
+   <children>
+      <VBox prefHeight="100.0" prefWidth="730.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/main2.PNG" />
+               </image>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin></ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="730.0" text="--- 현재 이용 회원 정보 ---">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Label>
+         </children></VBox>
+      <HBox prefHeight="400.0" prefWidth="730.0" style="-fx-background-color: white;">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="170.0">
+               <children>
+                  <VBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label text="회원 자리">
+                           <opaqueInsets>
+                              <Insets top="20.0" />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="code" prefHeight="30.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label text="회원 이름" />
+                        <TextField fx:id="name" prefHeight="30.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label text="회원 ID" />
+                        <TextField fx:id="id" prefHeight="30.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label text="회원 생년월일" />
+                        <TextField fx:id="birth" prefHeight="30.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label text="회원 연락처" />
+                        <TextField fx:id="phone" prefHeight="30.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label text="남은 시간" />
+                        <TextField fx:id="times" prefHeight="30.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></Separator>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="450.0">
+               <children>
+                  <TableView fx:id="tableView" maxHeight="-Infinity" prefHeight="200.0" prefWidth="400.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="자리" />
+                      <TableColumn prefWidth="106.0" text="이름" />
+                        <TableColumn prefWidth="100.0" text="ID" />
+                        <TableColumn minWidth="0.0" prefWidth="138.0" text="남은 시간" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="421.0" text="--- acorn pc 좌석 현황 ---">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox maxHeight="-Infinity" prefHeight="200.0" prefWidth="421.0">
+                     <children>
+                        <VBox maxWidth="-Infinity" prefHeight="184.0" prefWidth="107.0">
+                           <children>
+                              <HBox prefHeight="35.0" prefWidth="101.0">
+                                 <children>
+                                    <ImageView fitHeight="33.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/522959047.jpg" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="COUNTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <RadioButton fx:id="seat1" mnemonicParsing="false" text="1번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat2" mnemonicParsing="false" text="2번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat3" mnemonicParsing="false" text="3번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat4" mnemonicParsing="false" text="4번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat5" mnemonicParsing="false" text="5번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat6" mnemonicParsing="false" text="6번 PC" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="184.0" prefWidth="100.0">
+                           <children>
+                              <RadioButton fx:id="seat7" mnemonicParsing="false" text="7번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat8" mnemonicParsing="false" text="8번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat9" mnemonicParsing="false" text="9번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat10" mnemonicParsing="false" text="10번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat11" mnemonicParsing="false" text="11번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat12" mnemonicParsing="false" text="12번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat13" mnemonicParsing="false" text="13번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="200.0">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <VBox prefHeight="200.0" prefWidth="105.0">
+                           <children>
+                              <RadioButton fx:id="seat14" mnemonicParsing="false" text="14번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat15" mnemonicParsing="false" text="15번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat16" mnemonicParsing="false" text="16번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat17" mnemonicParsing="false" text="17번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat18" mnemonicParsing="false" text="18번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat19" mnemonicParsing="false" text="19번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat20" mnemonicParsing="false" text="20번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="184.0" prefWidth="99.0">
+                           <children>
+                              <RadioButton fx:id="seat21" mnemonicParsing="false" text="21번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat22" mnemonicParsing="false" text="22번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat23" mnemonicParsing="false" text="23번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat24" mnemonicParsing="false" text="24번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="seat25" mnemonicParsing="false" text="25번 PC">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/exit.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="EXIT">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Separator>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="155.0">
+               <children>
+                  <Button fx:id="memberAdd" mnemonicParsing="false" text="회원 추가">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust saturation="0.5" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="timeAdd" mnemonicParsing="false" text="시간 추가">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust saturation="0.5" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="memberDelete" mnemonicParsing="false" text="회원 종료">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust saturation="0.5" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="close" mnemonicParsing="false" text="시스템 종료">
+                     <VBox.margin>
+                        <Insets top="225.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
